@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  background-color: white;
+}
+
+/* HEADINGS */
+
+h1 {
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+h4 {
+  text-align: center;
+}
+
+p {
+  font-weight: 200;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+/* PLACES SECTION */
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.container-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 25px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  justify-content: center;
+  margin-left: 25px;
+  margin-right: 50px;
+}
+
+.container-item:hover {
+  transform: scale(1.02);
+}
+
+.container-item img {
+  height: 250px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.tour-card {
+  width: 320px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.tour-card:hover {
+  transform: translateY(-8px);
+}
+
+.tour-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.tour-card h4 {
+  padding: 20px;
+  font-weight: 600;
+}
+
+/* PLACE INFO (fills empty area) */
+
+.place-info {
+  flex: 1;
+}
+
+.place-info h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.place-info p {
+  text-align: left;
+  text-transform: none;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* PACKAGES */
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.package-card {
+  border: 2px solid black;
+  border-radius: 15px;
+  background: white;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  background-color: auto;
+}
+
+.package-card:hover {
+  transform: scale(1.05);
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: green;
+}
+
+/* BUDGET SECTION */
+
+.budget-box {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .container-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .place-info p {
+    text-align: center;
+  }
+}

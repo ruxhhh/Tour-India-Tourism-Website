@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Packages</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR USING BOOTSTRAP -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Tour India</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="places.html">Places</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="packages.html">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1>TOUR PACKAGES</h1>
+    <p>Choose your tour package</p>
+
+    <div class="cards-container">
+      <div class="package-card">
+        <h3>Silver Package</h3>
+        <p>Delhi • Agra • Jaipur</p>
+        <p class="price">₹25000</p>
+        <button onclick="addBudget(25000)">Add To Budget</button>
+      </div>
+
+      <div class="package-card">
+        <h3>Gold Package</h3>
+        <p>Delhi • Goa • Kerala</p>
+        <p class="price">₹45000</p>
+        <button onclick="addBudget(45000)">Add To Budget</button>
+      </div>
+
+      <div class="package-card">
+        <h3>Diamond Package</h3>
+        <p>Kashmir • Manali • Goa</p>
+        <p class="price">₹75000</p>
+        <button onclick="addBudget(75000)">Add To Budget</button>
+      </div>
+    </div>
+
+    <div class="budget-box">
+      <h2>Total Budget</h2>
+      <h3 id="total">₹0</h3>
+      <button onclick="confirmBooking()">Confirm Booking</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
